@@ -19,17 +19,20 @@
   height: 100vh;
 }
 .calculator {
-  overflow: hidden;
   border-radius: 38px;
   width: 22rem;
   border: 1px solid;
   background-color: #da2727;
-  box-shadow: inset -3px -13px 20px 0px #8c0b0b;
+  box-shadow: inset -3px -13px 20px 0px #8c0b0b, 12px 12px 20px 0px #000000f0;
+  overflow: hidden;
 }
 .calculator .screen-outputs {
   min-height: 8rem;
   padding: 1em;
   background-color: #000000;
+  box-shadow: inset 6px 8px 20px 1px #5c5c5c;
+  position: relative;
+  background-image: linear-gradient(137deg, black, #d7c6c62e);
 }
 .calculator .screen-outputs > * {
   color: aliceblue;
@@ -51,7 +54,6 @@
 .calculation-entries {
   text-shadow: 0px 0px 4px white;
 }
-
 
 .calculator .input-buttons {
   display: grid;
@@ -76,11 +78,11 @@
 .two-span-button {
   grid-column: span 2;
 }
-.black-button{
-    --button-inner-shadow: rgb(53, 53, 53);
-    background-color: black;
-    box-shadow: -1px 6px 9px 0px #700c0c,
-      inset -4px -9px 20px 0px var(--button-inner-shadow);
+.black-button {
+  --button-inner-shadow: rgb(53, 53, 53);
+  background-color: black;
+  box-shadow: -1px 6px 9px 0px #700c0c,
+    inset -4px -9px 20px 0px var(--button-inner-shadow);
 }
 
 .calculator .input-buttons > *:not(.black-button) {
