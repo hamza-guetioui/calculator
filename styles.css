@@ -1,3 +1,4 @@
+/* Reset styles for all elements */
 *,
 *::after,
 *::before {
@@ -7,10 +8,13 @@
   margin: 0;
   padding: 0;
 }
+
+/* Define custom properties */
 :root {
   --button-inner-shadow: #ff5b5b;
 }
 
+/* Styling for the container holding the calculator */
 .container {
   display: flex;
   justify-content: center;
@@ -18,6 +22,8 @@
   width: 100%;
   height: 100vh;
 }
+
+/* Styling for the calculator itself */
 .calculator {
   border-radius: 38px;
   width: 22rem;
@@ -26,6 +32,8 @@
   box-shadow: inset -3px -13px 20px 0px #8c0b0b, 12px 12px 20px 0px #000000f0;
   overflow: hidden;
 }
+
+/* Styling for the output screen of the calculator */
 .calculator .screen-outputs {
   min-height: 8rem;
   padding: 1em;
@@ -34,27 +42,33 @@
   position: relative;
   background-image: linear-gradient(137deg, black, #d7c6c62e);
 }
+
+/* Styling for text within the output screen */
 .calculator .screen-outputs > * {
   color: aliceblue;
   font-size: 2rem;
   font-weight: bold;
   text-align: right;
   word-wrap: break-word;
-  text-wrap: wrap;
 }
 
-/*screen divs text */
+/* Styling for calculation results (lower opacity) */
 .calculation-result {
   opacity: 0.5;
 }
+
+/* Styling for light-colored text with text shadow */
 .light-color {
   opacity: 1;
   text-shadow: 0px 0px 4px white;
 }
+
+/* Styling for calculation entries with text shadow */
 .calculation-entries {
   text-shadow: 0px 0px 4px white;
 }
 
+/* Styling for the input button grid */
 .calculator .input-buttons {
   display: grid;
   padding: 1rem;
@@ -64,6 +78,8 @@
   grid-template-rows: repeat(5, minmax(70px, auto));
   gap: 0.7rem;
 }
+
+/* Common styling for input buttons */
 .calculator .input-buttons > * {
   outline: none;
   user-select: none;
@@ -75,9 +91,12 @@
   transition: 0.2s ease;
 }
 
+/* Styling for double-width buttons */
 .two-span-button {
   grid-column: span 2;
 }
+
+/* Styling for black-colored buttons */
 .black-button {
   --button-inner-shadow: rgb(53, 53, 53);
   background-color: black;
@@ -85,6 +104,7 @@
     inset -4px -9px 20px 0px var(--button-inner-shadow);
 }
 
+/* Styling for non-black buttons */
 .calculator .input-buttons > *:not(.black-button) {
   border-color: #f82926;
   background-color: #b00b0b;
@@ -92,6 +112,7 @@
     inset -4px -9px 20px 0px var(--button-inner-shadow);
 }
 
+/* Hover effect for all buttons */
 .calculator .input-buttons > *:hover {
   box-shadow: -1px 6px 9px 0px #700c0c,
     inset -3px -9px 20px 10px var(--button-inner-shadow);
