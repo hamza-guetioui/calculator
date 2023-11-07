@@ -4,3 +4,5 @@
  Using plain JavaScript emphasizes efficient code and high performance.
 
  ## Visual-result: https://codepen.io/GUETIX/pen/mdvOogO
+
+<img src="calcul.png" alt="img"/>
